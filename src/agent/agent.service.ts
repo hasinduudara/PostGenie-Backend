@@ -13,7 +13,7 @@ export class AgentService {
   constructor() {
     // Initialize the Gemini AI model
     this.llm = new ChatGoogleGenerativeAI({
-      model: 'gemini-pro', // Changed from modelName to model
+      model: 'gemini-2.5-flash', // Changed from modelName to model
       maxOutputTokens: 2048,
       apiKey: process.env.GOOGLE_API_KEY, // Explicitly cast as string
     });
